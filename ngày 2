@@ -1,0 +1,136 @@
+Khởi động nhanh Python
+Python là ngôn ngữ lập trình được thông dịch, điều này có nghĩa là với tư cách là nhà phát triển, bạn viết các tệp Python (.py) trong trình soạn thảo văn bản, sau đó đưa các tệp đó vào trình thông dịch python để thực thi.
+
+Cách chạy tệp python giống như thế này trên dòng lệnh:
+
+C:\Users\Your Name>python helloworld.py
+
+----------------------------------------------
+Trong đó "helloworld.py" là tên tệp python
+
+Hãy viết tệp Python đầu tiên của chúng tôi, được gọi là helloworld.py, tệp này có thể được thực hiện trong bất kỳ trình soạn thảo văn bản nào.
+
+helloworld.py
+
+print("Hello, World!")
+Đơn giản như thế. Lưu tập tin của bạn. Mở dòng lệnh của bạn, điều hướng đến thư mục mà bạn đã lưu tệp của mình và chạy:
+
+C:\Users\Your Name>python helloworld.py
+Đầu ra
+
+Hello, World!
+Dòng lệnh Python
+Để kiểm tra một lượng mã ngắn trong python, đôi khi cách nhanh nhất và dễ nhất là không viết mã vào một tệp. Điều này có thể thực hiện được vì Python có thể chạy dưới dạng một dòng lệnh.
+
+Nhập nội dung sau vào dòng lệnh Windows, Mac hoặc Linux:
+
+C:\Users\Your Name>python
+Hoặc, nếu lệnh "python" không hoạt động, bạn có thể thử "py":
+C:\Users\Your Name>py
+Từ đó, bạn có thể viết bất kỳ con trăn nào, bao gồm cả ví dụ hello world của chúng tôi từ phần trước trong hướng dẫn:
+
+C:\Users\Your Name>python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+Cái nào sẽ viết "Xin chào, Thế giới!" trong dòng lệnh:
+
+C:\Users\Your Name>python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+Hello, World!
+Bất cứ khi nào bạn thực hiện xong trong dòng lệnh python, bạn chỉ cần gõ lệnh sau để thoát khỏi giao diện dòng lệnh python:
+
+exit()
+Execute Python Syntax
+As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:
+
+>>> print("Hello, World!")
+Hello, World!
+Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:
+
+C:\Users\Your Name>python myfile.py
+Python Indentation
+Indentation refers to the spaces at the beginning of a code line.
+
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+Python uses indentation to indicate a block of code.
+Ví dụNhận máy chủ Python của riêng bạn
+if 5 > 2:
+  print("Five is greater than two!")
+  Python sẽ báo lỗi cho bạn nếu bạn bỏ qua phần thụt đầu dòng:
+
+Ví dụ
+Lỗi cú pháp:
+
+if 5 > 2:
+print("Five is greater than two!")
+Số lượng khoảng trắng tùy thuộc vào bạn với tư cách là một lập trình viên, cách sử dụng phổ biến nhất là bốn, nhưng ít nhất phải là một.
+
+Ví dụ
+if 5 > 2:
+ print("Five is greater than two!") 
+if 5 > 2:
+        print("Five is greater than two!") 
+Bạn phải sử dụng cùng một số khoảng trắng trong cùng một khối mã, nếu không Python sẽ báo lỗi cho bạn:
+
+Ví dụ
+Lỗi cú pháp:
+
+if 5 > 2:
+ print("Five is greater than two!")
+        print("Five is greater than two!")
+Biến Python
+Trong Python, các biến được tạo khi bạn gán giá trị cho nó:
+
+Ví dụ
+Các biến trong Python:
+
+x = 5
+y = "Hello, World!"
+Python không có lệnh khai báo biến.
+
+Bạn sẽ tìm hiểu thêm về biến trong chương Biến Python .
+
+Bình luận
+Python có khả năng nhận xét cho mục đích tài liệu trong mã.
+
+Nhận xét bắt đầu bằng dấu # và Python sẽ hiển thị phần còn lại của dòng dưới dạng nhận xét:
+
+Ví dụ
+Nhận xét bằng Python:
+
+#This is a comment.
+print("Hello, World!")
+Bình luận Python
+Nhận xét có thể được sử dụng để giải thích mã Python.
+
+Nhận xét có thể được sử dụng để làm cho mã dễ đọc hơn.
+
+Nhận xét có thể được sử dụng để ngăn việc thực thi khi kiểm tra mã.
+
+Tạo bình luận
+Nhận xét bắt đầu bằng a #và Python sẽ bỏ qua chúng:
+#This is a comment
+print("Hello, World!")
+Nhận xét có thể được đặt ở cuối dòng và Python sẽ bỏ qua phần còn lại của dòng:
+
+Ví dụ
+print("Hello, World!") #This is a comment
+Một nhận xét không nhất thiết phải là văn bản giải thích mã, nó cũng có thể được sử dụng để ngăn Python thực thi mã:
+
+Ví dụ
+#print("Hello, World!")
+print("Cheers, Mate!")
+Nhận xét nhiều dòng
+Python không thực sự có cú pháp cho nhận xét nhiều dòng.
+
+Để thêm một bình luận nhiều dòng, bạn có thể chèn một #cho mỗi dòng:
+
+Ví dụ
+#This is a comment
+#written in
+#more than just one line
+print("Hello, World!")
