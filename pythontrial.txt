@@ -1,5 +1,5 @@
-to�n t? python
-C�c to�n t? s? h?c du?c s? d?ng v?i c�c gi� tr? s? d? th?c hi?n c�c ph�p to�n ph? bi?n:
+toán tử python
+Các toán tử số học được sử dụng với các giá trị số để thực hiện các phép toán phổ biến:
 
 
 + | Addition = x + y
@@ -10,8 +10,8 @@ C�c to�n t? s? h?c du?c s? d?ng v?i c�c gi� tr? s? d? th?c hi?n c�c ph�p to�n ph
 ** | Exponentiation = x ** y
 // | Floor division = x // y
 ----------------------------------
-G�n gi� tr? cho bi?n?????
-To�n t? g�n du?c s? d?ng d? g�n gi� tr? cho bi?n:
+Gán giá trị cho biến?????
+Toán tử gán được sử dụng để gán giá trị cho biến:
 
 
 
@@ -33,8 +33,8 @@ To�n t? g�n du?c s? d?ng d? g�n gi� tr? cho bi?n:
 x = 5 
 print(x)
 -------------------------------------
-To�n t? so s�nh Python
-To�n t? so s�nh du?c s? d?ng d? so s�nh hai gi� tr?:
+Toán tử so sánh Python
+Toán tử so sánh được sử dụng để so sánh hai giá trị:
 
 
 
@@ -52,12 +52,12 @@ y = 3
 print(x <= y)
 
 # returns False because 5 is neither less than or equal to 3 
-k?t qu? tr? v? false
+kết quả trả về false
 
 ---------------------------------------
 
-To�n t? logic Python
-C�c to�n t? logic du?c s? d?ng d? k?t h?p c�c c�u di?u ki?n:
+Toán tử logic Python
+Các toán tử logic được sử dụng để kết hợp các câu điều kiện:
 
 and 	Returns True if both statements are true	x < 5 and  x < 10	
 or	Returns True if one of the statements is true	x < 5 or x < 4	
@@ -69,10 +69,10 @@ x = 5
 print(x > 3 and x < 10)
 
 # returns True because 5 is greater than 3 AND 5 is less than 10 
-k?t qu? tr? v? true 
+kết quả trả về true 
 ----------------------------------------
-To�n t? nh?n d?ng Python
-C�c to�n t? nh?n d?ng du?c s? d?ng d? so s�nh c�c d?i tu?ng, kh�ng ph?i n?u ch�ng b?ng nhau, m� n?u ch�ng th?c s? l� c�ng m?t d?i tu?ng, v?i c�ng m?t v? tr� b? nh?:
+Toán tử nhận dạng Python
+Các toán tử nhận dạng được sử dụng để so sánh các đối tượng, không phải nếu chúng bằng nhau, mà nếu chúng thực sự là cùng một đối tượng, với cùng một vị trí bộ nhớ:
 
 is 	Returns True if both variables are the same object	x is y	
 is not	Returns True if both variables are not the same object	x is not y
@@ -96,10 +96,10 @@ print(x == y)
 
 # to demonstrate the difference betweeen "is" and "==": this comparison returns True because x is equal to y
 
-k?t qu? tr? v? tuong ?ng True , False , True
+kết quả trả về tương ứng True , False , True
  ---------------------------------------------
-To�n t? th�nh vi�n Python
-C�c to�n t? th�nh vi�n du?c s? d?ng d? ki?m tra xem m?t chu?i c� du?c tr�nh b�y trong m?t d?i tu?ng hay kh�ng:
+Toán tử thành viên Python
+Các toán tử thành viên được sử dụng để kiểm tra xem một chuỗi có được trình bày trong một đối tượng hay không:
 
 
 in 	Returns True if a sequence with the specified value is present in the object	x in y	
@@ -113,11 +113,11 @@ x = ["apple", "banana"]
 print("pineapple" not in x)
 
 # returns True because a sequence with the value "pineapple" is not in the list
-k?t qu? tr? v? tuong ?ng : true
+kết quả trả về tương ứng : true
 ----------------------------------------------------
 
-To�n t? Bitwise Python
-To�n t? bitwise du?c s? d?ng d? so s�nh c�c s? (nh? ph�n):
+Toán tử Bitwise Python
+Toán tử bitwise được sử dụng để so sánh các số (nhị phân):
 
 & 	AND	Sets each bit to 1 if both bits are 1	x & y	
 |	OR	Sets each bit to 1 if one of two bits is 1	x | y	
@@ -153,21 +153,21 @@ Decimal numbers and their binary values:
 7 = 0000000000000111
 """
 
-k?t qu? tr? v? tuong ?ng = 5
+kết quả trả về tương ứng = 5
 
 -----------------------------------------
-uu ti�n di?u h�nh
-Uu ti�n to�n t? m� t? th? t? th?c hi?n c�c thao t�c.
+ưu tiên điều hành
+Ưu tiên toán tử mô tả thứ tự thực hiện các thao tác.
 
-V� d?
-D?u ngo?c don c� quy?n uu ti�n cao nh?t, nghia l� c�c bi?u th?c b�n trong d?u ngo?c don ph?i du?c d�nh gi� tru?c:
+Ví dụ
+Dấu ngoặc đơn có quyền ưu tiên cao nhất, nghĩa là các biểu thức bên trong dấu ngoặc đơn phải được đánh giá trước:
 
 print((6 + 3) - (6 + 3)) = 0
 
-Ph�p nh�n *c� m?c d? uu ti�n cao hon ph�p c?ng +v� do d� ph�p nh�n du?c d�nh gi� tru?c ph�p c?ng:
+Phép nhân *có mức độ ưu tiên cao hơn phép cộng +và do đó phép nhân được đánh giá trước phép cộng:
 
 print(100 + 5 * 3)
-Th? t? uu ti�n du?c m� t? trong b?ng b�n du?i, b?t d?u v?i uu ti�n cao nh?t ? tr�n c�ng:
+Thứ tự ưu tiên được mô tả trong bảng bên dưới, bắt đầu với ưu tiên cao nhất ở trên cùng:
 
 ()	Parentheses	
 **	Exponentiation	
@@ -183,9 +183,9 @@ not	Logical NOT
 and	AND	
 or	OR
 
-N?u hai to�n t? c� c�ng m?c d? uu ti�n, th� bi?u th?c du?c d�nh gi� t? tr�i sang ph?i.
+Nếu hai toán tử có cùng mức độ ưu tiên, thì biểu thức được đánh giá từ trái sang phải.
 
-V� d?
-Ph�p c?ng +v� ph�p tr? -c� c�ng m?c d? uu ti�n v� do d�, ch�ng t�i d�nh gi� bi?u th?c t? tr�i sang ph?i:
+Ví dụ
+Phép cộng +và phép trừ -có cùng mức độ ưu tiên và do đó, chúng tôi đánh giá biểu thức từ trái sang phải:
 
 print(5 + 4 - 7 + 3) = 5
