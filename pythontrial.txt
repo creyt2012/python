@@ -1,0 +1,191 @@
+toán t? python
+Các toán t? s? h?c du?c s? d?ng v?i các giá tr? s? d? th?c hi?n các phép toán ph? bi?n:
+
+
++ | Addition = x + y
+- | Subtraction = x - y
+* | Multiplication = x * y
+/ | division = x / y
+% | Modulus = x % y
+** | Exponentiation = x ** y
+// | Floor division = x // y
+----------------------------------
+Gán giá tr? cho bi?n?????
+Toán t? gán du?c s? d?ng d? gán giá tr? cho bi?n:
+
+
+
+=	x = 5	x = 5	
++=	x += 3	x = x + 3	
+-=	x -= 3	x = x - 3	
+*=	x *= 3	x = x * 3	
+/=	x /= 3	x = x / 3	
+%=	x %= 3	x = x % 3	
+//=	x //= 3	x = x // 3	
+**=	x **= 3	x = x ** 3	
+&=	x &= 3	x = x & 3	
+|=	x |= 3	x = x | 3	
+^=	x ^= 3	x = x ^ 3	
+>>=	x >>= 3	x = x >> 3	
+<<=     x <<= 3	x = x << 3
+
+ example : 
+x = 5 
+print(x)
+-------------------------------------
+Toán t? so sánh Python
+Toán t? so sánh du?c s? d?ng d? so sánh hai giá tr?:
+
+
+
+==	Equal	x == y	
+!=	Not equal	x != y	
+>	Greater than	x > y	
+<	Less than	x < y	
+>=	Greater than or equal to	x >= y	
+<=	Less than or equal to	x <= y
+
+example : 
+x = 5
+y = 3
+
+print(x <= y)
+
+# returns False because 5 is neither less than or equal to 3 
+k?t qu? tr? v? false
+
+---------------------------------------
+
+Toán t? logic Python
+Các toán t? logic du?c s? d?ng d? k?t h?p các câu di?u ki?n:
+
+and 	Returns True if both statements are true	x < 5 and  x < 10	
+or	Returns True if one of the statements is true	x < 5 or x < 4	
+not	Reverse the result, returns False if the result is true	not(x < 5 and x < 10)
+
+
+x = 5
+
+print(x > 3 and x < 10)
+
+# returns True because 5 is greater than 3 AND 5 is less than 10 
+k?t qu? tr? v? true 
+----------------------------------------
+Toán t? nh?n d?ng Python
+Các toán t? nh?n d?ng du?c s? d?ng d? so sánh các d?i tu?ng, không ph?i n?u chúng b?ng nhau, mà n?u chúng th?c s? là cùng m?t d?i tu?ng, v?i cùng m?t v? trí b? nh?:
+
+is 	Returns True if both variables are the same object	x is y	
+is not	Returns True if both variables are not the same object	x is not y
+
+
+example :
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is z)
+
+# returns True because z is the same object as x
+
+print(x is y)
+
+# returns False because x is not the same object as y, even if they have the same content
+
+print(x == y)
+
+# to demonstrate the difference betweeen "is" and "==": this comparison returns True because x is equal to y
+
+k?t qu? tr? v? tuong ?ng True , False , True
+ ---------------------------------------------
+Toán t? thành viên Python
+Các toán t? thành viên du?c s? d?ng d? ki?m tra xem m?t chu?i có du?c trình bày trong m?t d?i tu?ng hay không:
+
+
+in 	Returns True if a sequence with the specified value is present in the object	x in y	
+not in	Returns True if a sequence with the specified value is not present in the object  x not in y
+
+
+example : 
+
+x = ["apple", "banana"]
+
+print("pineapple" not in x)
+
+# returns True because a sequence with the value "pineapple" is not in the list
+k?t qu? tr? v? tuong ?ng : true
+----------------------------------------------------
+
+Toán t? Bitwise Python
+Toán t? bitwise du?c s? d?ng d? so sánh các s? (nh? phân):
+
+& 	AND	Sets each bit to 1 if both bits are 1	x & y	
+|	OR	Sets each bit to 1 if one of two bits is 1	x | y	
+^	XOR	Sets each bit to 1 if only one of two bits is 1	x ^ y	
+~	NOT	Inverts all the bits	~x	
+<<	Zero fill left shift	Shift left by pushing zeros in from the right and let the leftmost bits fall off	x << 2	
+>>	Signed right shift	Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off	x >> 2
+
+
+example :
+
+print(6 ^ 3)
+
+
+
+"""
+The ^ operator compares each bit and set it to 1 if only one is 1, otherwise (if both are 1 or both are 0) it is set to 0:
+
+6 = 0000000000000110
+3 = 0000000000000011
+--------------------
+5 = 0000000000000101
+====================
+
+Decimal numbers and their binary values:
+0 = 0000000000000000
+1 = 0000000000000001
+2 = 0000000000000010
+3 = 0000000000000011
+4 = 0000000000000100
+5 = 0000000000000101
+6 = 0000000000000110
+7 = 0000000000000111
+"""
+
+k?t qu? tr? v? tuong ?ng = 5
+
+-----------------------------------------
+uu tiên di?u hành
+Uu tiên toán t? mô t? th? t? th?c hi?n các thao tác.
+
+Ví d?
+D?u ngo?c don có quy?n uu tiên cao nh?t, nghia là các bi?u th?c bên trong d?u ngo?c don ph?i du?c dánh giá tru?c:
+
+print((6 + 3) - (6 + 3)) = 0
+
+Phép nhân *có m?c d? uu tiên cao hon phép c?ng +và do dó phép nhân du?c dánh giá tru?c phép c?ng:
+
+print(100 + 5 * 3)
+Th? t? uu tiên du?c mô t? trong b?ng bên du?i, b?t d?u v?i uu tiên cao nh?t ? trên cùng:
+
+()	Parentheses	
+**	Exponentiation	
++x  -x  ~x	Unary plus, unary minus, and bitwise NOT	
+*  /  //  %	Multiplication, division, floor division, and modulus	
++  -	Addition and subtraction	
+<<  >>	Bitwise left and right shifts	
+&	Bitwise AND	
+^	Bitwise XOR	
+|	Bitwise OR	
+==  !=  >  >=  <  <=  is  is not  in  not in 	Comparisons, identity, and membership operators	
+not	Logical NOT	
+and	AND	
+or	OR
+
+N?u hai toán t? có cùng m?c d? uu tiên, thì bi?u th?c du?c dánh giá t? trái sang ph?i.
+
+Ví d?
+Phép c?ng +và phép tr? -có cùng m?c d? uu tiên và do dó, chúng tôi dánh giá bi?u th?c t? trái sang ph?i:
+
+print(5 + 4 - 7 + 3) = 5
