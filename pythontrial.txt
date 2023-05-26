@@ -186,6 +186,6 @@ or	OR
 Nếu hai toán tử có cùng mức độ ưu tiên, thì biểu thức được đánh giá từ trái sang phải.
 
 Ví dụ
-Phép cộng +và phép trừ -có cùng mức độ ưu tiên và do đó, chúng tôi đánh giá biểu thức từ trái sang phải:
+Phép cộng +và phép trừ -có cùng mức độ ưu tiên và do đó, mình đánh giá biểu thức từ trái sang phải:
 
 print(5 + 4 - 7 + 3) = 5
